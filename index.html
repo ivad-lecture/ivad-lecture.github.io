@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tan Tang</title>
+  <style>
+    body {
+      margin: 0;
+      display: grid;
+      grid-template: auto 1fr auto/auto 1fr auto;
+    }
+
+    header {
+      background-color: white;
+      grid-column: 1/4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .leftSider {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rightSider {
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer {
+      grid-column: 1/4;
+      display: flex;
+      justify-content: center;
+    }
+
+    .head-title {
+      display: inline-block;
+    }
+
+    .nav {
+      position: absolute;
+      top: 30px;
+      left: 760px;
+      width: 100px;
+    }
+
+    .contact-title {
+      position: sticky;
+      top: 20px;
+      color: red;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 20%;
+    }
+
+    .flex-container-info {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      padding: 10px 20%;
+    }
+
+    .flex-item2 {
+      flex: 0 1;
+    }
+
+    .flex-container-content {
+      padding: 10px 20%;
+    }
+
+    .intro-container {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>自我介绍</h1>
+    <a href="https://person.zju.edu.cn/tangtan">英文主页</a>
+  </header>
+  <div class="leftSider">
+    <h2>我的校园</h2>
+    <video src="./交互设计/浙大招生22.mp4" width="200" controls></video>
+    <audio src="./交互设计/浙大校歌伴奏.mp3" controls></audio>
+  </div>
+  <div class="main">
+    <section>
+      <div class="intro-container">
+        <a href="https://www.zju.edu.cn/"
+          style="flex: 0 1 20%; display: flex; justify-content: center; align-items: center;">
+          <img src="./交互设计/玻璃质感文字.jpg" width="100" height="80" />
+        </a>
+        <div style="flex: 0 1 80%">
+          <div>
+            <h2>兴趣爱好</h2>
+            <p>
+              一是研究<mark>艺术与科技</mark>的交叉融合，探索人工智能在艺术设计中扮演的角色，探究人工智能与人类智慧在设计创作中的协同机制；
+            </p>
+            <p>
+              二是研究<mark>大数据与人文艺术</mark>的结合，利用大数据+软件工程的方法来促进普通人对于人文艺术的理解、分析与“再”创作（Visualization
+              for the mass）。
+            </p>
+          </div>
+          <div style="display: flex;">
+            <div style="flex: 0 1 50%;">
+              <h2>
+                专业技能
+              </h2>
+              <ol>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>JS/TS</li>
+              </ol>
+            </div>
+            <div style="flex: 0 1 50%">
+              <h2>教育经历</h2>
+              <table>
+                <tr>
+                  <th>阶段</th>
+                  <th>学校</th>
+                </tr>
+                <tr>
+                  <td>本科</td>
+                  <td>浙江大学</td>
+                </tr>
+                <tr>
+                  <td>研究生</td>
+                  <td>浙江大学</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>联络方式</h2>
+      <form>
+        <div class="flex-container">
+          <input type="text" class="flex-item" style="flex: 0 1 350px" placeholder="电子邮件" />
+          <input type="submit" class="flex-item" value="提交" />
+        </div>
+        <div class="flex-container-info">
+          <input type="text" class="flex-item2" placeholder="姓名" />
+          <input type="text" class="flex-item2" placeholder="学号" />
+          <select name="grade" class="flex-item2">
+            <option value="g1">大一</option>
+            <option value="g2">大二</option>
+            <option value="g3">大三</option>
+            <option value="g4" selected>大四</option>
+          </select>
+        </div>
+        <div class="flex-container-content">
+          <textarea style="width: 100%; height: 200px;"></textarea>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div class="rightSider">
+    <h2>我的演讲</h2>
+    <p>
+      【GAMES Webinar 227-可视化专题-唐谈：AI在VIS设计中扮演的角色】
+    </p>
+    <iframe src="https://player.bilibili.com/player.html?aid=341014611&bvid=BV1aR4y1K7BC&cid=587409075&page=1"
+      width="200" height="200"></iframe>
+  </div>
+  <footer>
+    <a href="http://www.soaa.zju.edu.cn/">友情链接</a>
+  </footer>
+</body>
+
+</html>
